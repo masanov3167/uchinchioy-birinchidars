@@ -140,6 +140,8 @@ h1, h2, h3, h4, h5, h6{
         transform: translate(0,0);
     }
 
+    
+
     .toggle-nav{
         width: 90%;
         height: 265px;
@@ -153,6 +155,8 @@ h1, h2, h3, h4, h5, h6{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        background: rgba(255, 255, 255, 1);
     }
 
     .toggle-nav >li{
@@ -221,11 +225,12 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .hero{
         width: 100%;
-        height: 676px;
+        height: 706px;
         background:  #F2F2F2;
     
         margin: 0;
         margin-top: 80px;
+        padding-bottom: 96px;
     
         display: flex;
         justify-content: center;
@@ -269,5 +274,174 @@ h1, h2, h3, h4, h5, h6{
     
     .hero-right >picture >img{
        margin: 0 10px;
+    }
+}
+
+
+
+/* easy bank section here  */
+
+.easy-bank{
+    width: 100%;
+    height: 615px;
+    background: rgba(244, 245, 247, 1);
+
+    padding: 95px 125px;
+}
+
+.easy-bank >h3{
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 64px;
+    color: rgba(45, 49, 77, 1);
+}
+
+.easy-bank >p{
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(149, 151, 165, 1);
+    width: 60%;
+}
+
+.easy-bank-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.easy-bank-card{
+    width: 25%;
+
+}
+
+:first-child.easy-bank-card::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../img/banking.png) no-repeat;
+    background-size: cover;
+}
+
+:nth-child(2).easy-bank-card::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../img/budgeting.png) no-repeat;
+    background-size: cover;
+}
+
+:nth-child(3).easy-bank-card::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../img/onboarding.png) no-repeat;
+    background-size: cover;
+}
+
+:last-child.easy-bank-card::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../img/banking.png) no-repeat;
+    background-size: cover;
+}
+
+.easy-bank-card >h4{
+    font-size: 24px;
+    font-weight: 100;
+    color: rgba(45, 49, 77, 1);
+
+    margin: 25px 0;
+}
+
+.easy-bank-card >p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(149, 151, 165, 1);
+
+    width: 90%;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .easy-bank{
+        width: 100%;
+        height: 1305px;
+    
+        padding: 64px 25px;
+        text-align: center;
+    }
+    
+    .easy-bank >h3{
+        font-size: 32px;
+        line-height: 38px;
+        /* width: 90%; */
+        padding: 0 20%;
+    }
+    
+    .easy-bank >p{
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+    }
+    
+    .easy-bank-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+    
+    .easy-bank-card{
+        width: 100%;
+        /* padding: 0 25px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        margin-top: 32px;
+    }
+    
+    :first-child.easy-bank-card::before{
+        width: 72px;
+        height: 72px;
+    }
+    
+    :nth-child(2).easy-bank-card::before{
+        width: 72px;
+        height: 72px;
+    }
+    
+    :nth-child(3).easy-bank-card::before{
+        width: 72px;
+        height: 72px;
+        
+    }
+    
+    :last-child.easy-bank-card::before{
+        width: 72px;
+        height: 72px;
+       
+    }
+    
+    .easy-bank-card >h4{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 100;  
+        margin: 20px 0;
+    }
+    
+    .easy-bank-card >p{
+        font-size: 15px;
+        line-height: 25px;
     }
 }
