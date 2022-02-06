@@ -267,13 +267,13 @@ h1, h2, h3, h4, h5, h6{
         height: inherit;
         background: url(../img/hero-bg-mobile.png) no-repeat;
         background-size: cover;
-        margin-top: -80px;
+        margin-top: -120px;
     
     }
     
     
     .hero-right >picture >img{
-       margin: 0 10px;
+       margin: 40px 10px;
     }
 }
 
@@ -556,6 +556,152 @@ h1, h2, h3, h4, h5, h6{
 
     .articles-card-title >h3:active{
         color: rgba(48, 200, 143, 1);
+    }
+    
+}
+
+
+
+/* footer css code here  */
+
+
+.footer{
+    width: 100%;
+    height: 191px;
+    background: rgba(45, 49, 77, 1);
+    padding: 48px 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left-logo{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-left-logo >div{
+    margin-top: 55px;
+}
+
+.footer-left-logo >div >svg{
+    margin: 0 5px;
+    color: white;
+}
+
+.footer-left-logo >div >svg:hover{
+    color: rgba(48, 200, 143, 1);
+}
+
+.footer-nav{
+    width: 20%;
+}
+
+.footer-nav >li{
+    margin: 12px 0;
+    /* width: 33%; */
+}
+
+.footer-nav >li >a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-nav >li >a:hover{
+    color: rgba(48, 200, 143, 1);
+}
+
+.footer-right{
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.footer-right >p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .footer{
+        width: 100%;
+        height: 510px;
+        padding: 40px 90px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footer-left-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footer-left-logo >div{
+        margin-top: 32px;
+    }
+    
+    .footer-left-logo >div >svg{
+        margin: 0 8px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .footer-left-logo >div >svg:active{
+        color: rgba(48, 200, 143, 1);
+    }
+    
+    .footer-nav{
+        width: 100%;
+    }
+
+    :last-child.footer-nav{
+        margin-top: -16px;
+    }
+    
+    .footer-nav >li{
+        margin: 12px 0;
+    }
+    
+    .footer-nav >li >a:active{
+        color: rgba(48, 200, 143, 1);
+    }
+    
+    .footer-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     
 }
