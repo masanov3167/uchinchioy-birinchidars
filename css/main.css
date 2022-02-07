@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6{
         background-size: cover;
     }
 
-    .toggle-btn:active, .hero:active{
+    .toggle-btn:active, .toggle-nav:active{
         background: url(../img/header-mobile-bg.png) no-repeat;
         width: 120%;
         height: 90vh;
