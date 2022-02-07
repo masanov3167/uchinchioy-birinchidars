@@ -145,6 +145,14 @@ h1, h2, h3, h4, h5, h6{
         background-size: cover;
     }
 
+    .toggle-btn:active, .hero:active{
+        background: url(../img/header-mobile-bg.png) no-repeat;
+        width: 120%;
+        height: 90vh;
+        position: absolute;
+        top: 64px;
+    }
+
     .toggle-nav{
         transform: translate(-120%);
     }
@@ -152,6 +160,7 @@ h1, h2, h3, h4, h5, h6{
     .toggle-btn:hover ~ .toggle-nav{
         transform: translate(0,0);
     }
+
 
     
 
@@ -220,7 +229,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .hero-right{
-    width: 75%;
+    width: 80%;
     height: inherit;
     background: url(../img/hero-bg-desktop.png) no-repeat;
     background-size: cover;
